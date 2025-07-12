@@ -15,11 +15,11 @@
     <finalName>sample-webapp</finalName>
 
     <plugins>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-war-plugin</artifactId>
-            <version>3.4.0</version>
-        </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>3.4.0</version>
+      </plugin>
     </plugins>
   </build>
 
@@ -31,4 +31,11 @@
       <scope>provided</scope>
     </dependency>
   </dependencies>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>Webapp</id>
+      <url>http://13.200.251.40:8081/repository/Webapp</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
